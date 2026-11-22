@@ -8,7 +8,7 @@ A public, year-round list of New York City fixed-price menus that are cheap enou
 
 ```bash
 pip install -r requirements.txt            # pytest only
-python -m pytest -q                        # ~0.3s, offline. Expect: 68 passed
+python -m pytest -q                        # ~0.3s, offline. Expect: 72 passed
 python scripts/build.py                    # -> docs/data.json + data/recheck_list.md (fetches nyc-restaurants' public season index; free)
 python scripts/recheck.py                  # fetch every research Proof page -> data/checks.json (free)
 python scripts/recheck.py --accept ID ...  # owner has checked this Proof page: store it, Checked On = today
@@ -49,12 +49,13 @@ python -m http.server -d docs 8000         # view the site (file:// can't fetch 
 - **Join key** for Rankings is the Google place_id, never the name (ADR 0002). The build prints Deals with no place_id and Deals with no Ranking.
 - A Recheck that can't reach a page (timeout, 429, 5xx, dropped connection) is "unreachable", never "gone", and never moves Checked On. Each Check carries the last unchanged date forward from the previous `checks.json`, so a bad week can't take back an earlier confirmation either.
 - `courses_basis` (the Restaurant Week course rule) is set only by the importer; a research row naming it is refused. The page also hides any Deal past 30 days on its own, in case the weekly rebuild didn't run.
+- **Home-screen app**: `docs/app.webmanifest` and `docs/icons/` (plain PNGs, no service worker, so the page always loads fresh data). The page's Content-Security-Policy needs `manifest-src 'self'`, or `default-src 'none'` blocks the manifest; `tests/test_home_screen.py` checks both.
 - `docs/data.json` changes on every build (its `generated_at`). That's expected.
 - **Do not read into context:** `data/geo/nyc_nta_2020.geojson` (2.4 MB), `data/rankings.json` (1.7 MB). Inspect them with `python -c`.
 
 ## Before you finish any task
 
-1. `python -m pytest -q` -> `68 passed` (more if you added tests).
+1. `python -m pytest -q` -> `72 passed` (more if you added tests).
 2. `python scripts/build.py` -> exits 0. Read the counts. Out of season, expect `no Restaurant Week season running: 1`.
 3. `git diff --stat` -> only intended files, plus `docs/data.json` and `data/recheck_list.md`.
 
