@@ -1,0 +1,969 @@
+{
+ "generated_at": "2026-08-28T04:24:21+00:00",
+ "season_label": "Summer 2026",
+ "season_code": "srw26",
+ "season_start": "2026-07-20",
+ "snapshot_date": "2026-08-10",
+ "verified_asof": "2026-08-01",
+ "book_by": "2026-08-16",
+ "program_end": "2026-09-06",
+ "rubric_mean": 35.3,
+ "google_mean": 4.491,
+ "google_prior": 150,
+ "restaurants": [
+  {
+   "slug": "100-feast",
+   "name": "100 Feast",
+   "borough": "Manhattan",
+   "neighborhood": "Chinatown",
+   "address": "100 E. Broadway, 2nd fl. & 3rd fl., Manhattan, NY, 10002",
+   "lat": 40.7139245,
+   "lng": -73.9933101,
+   "subway": {
+    "J": 11,
+    "Z": 11,
+    "M": 11,
+    "F": 4,
+    "B": 8,
+    "D": 8
+   },
+   "subway_nearest": {
+    "name": "East Broadway",
+    "min": 4,
+    "routes": [
+     "F"
+    ]
+   },
+   "outdoor": {
+    "sidewalk": false,
+    "roadway": false,
+    "licensed": false,
+    "described": true,
+    "licence_name": null,
+    "dist_m": null
+   },
+   "cuisines": [
+    "Chinese",
+    "Japanese / Sushi"
+   ],
+   "price_tiers": [
+    "$30",
+    "$45"
+   ],
+   "meal_periods": [
+    "brunch",
+    "dinner",
+    "lunch"
+   ],
+   "meal_types_raw": [
+    "$30 Lunch Price",
+    "$45 Dinner Price",
+    "$30 Sunday Lunch/Brunch Price",
+    "$45 Sunday Dinner Price"
+   ],
+   "end_date": "2026-09-06",
+   "end_date_source": "api",
+   "end_date_api": "2026-09-06",
+   "days": null,
+   "sunday": true,
+   "sunday_source": "api",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "Estimate only",
+   "verdict_note": null,
+   "notes": null,
+   "flags": [],
+   "menu_state": "image_only",
+   "recognition": [],
+   "recog_top": null,
+   "recog_rank": null,
+   "recog_eras": [],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.2,
+    "reviews": 81,
+    "score": 4.389,
+    "place_id": "ChIJf83T8ghbwokRZ8mODC62yPI",
+    "matched_name": "100 Feast 萬豪大酒家",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/100-feast/",
+    "menu": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51359-100Feast-menu.pdf",
+    "reservation": "https://www.opentable.com/restref/client/?rid=1521256",
+    "website": "https://www.100feast.com/en"
+   },
+   "gap_usd": 46,
+   "gap_usd_high": null,
+   "gap_pct": 61,
+   "gap_pct_high": null,
+   "gap_basis": "estimate",
+   "comparable_usd": 76,
+   "comparable_usd_high": null,
+   "rw_price": 30,
+   "price_source": "listing",
+   "estimate_tier": "$30",
+   "estimate_confidence": "high",
+   "rubric": 21.7,
+   "rubric_parts": {
+    "award": 0.0,
+    "rating": 20.7,
+    "lex": 50.0,
+    "window": 33.3
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "8282",
+   "name": "8282",
+   "borough": "Manhattan",
+   "neighborhood": "Lower East Side",
+   "address": "84 Stanton St., Manhattan, NY, 10002",
+   "lat": 40.7216708,
+   "lng": -73.9887463,
+   "subway": {
+    "F": 4,
+    "6": 11,
+    "J": 6,
+    "Z": 6,
+    "B": 9,
+    "D": 9,
+    "M": 6
+   },
+   "subway_nearest": {
+    "name": "2 Av",
+    "min": 4,
+    "routes": [
+     "F"
+    ]
+   },
+   "outdoor": null,
+   "cuisines": [
+    "Korean"
+   ],
+   "price_tiers": [
+    "$60"
+   ],
+   "meal_periods": [
+    "dinner"
+   ],
+   "meal_types_raw": [
+    "$60 Dinner Price",
+    "$60 Sunday Dinner Price"
+   ],
+   "end_date": "2026-09-06",
+   "end_date_source": "api",
+   "end_date_api": "2026-09-06",
+   "days": null,
+   "sunday": true,
+   "sunday_source": "api",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "Estimate only",
+   "verdict_note": null,
+   "notes": null,
+   "flags": [],
+   "menu_state": "none",
+   "recognition": [
+    {
+     "source": "michelin",
+     "source_label": "Michelin",
+     "level": "Bib Gourmand",
+     "level_raw": "bib_gourmand",
+     "year": 2025,
+     "url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/8282",
+     "matched_name": "8282",
+     "name_match_only": false,
+     "confidence": 1.0,
+     "awards": [],
+     "tier_rank": 3,
+     "tier": "Michelin Bib Gourmand",
+     "era": "current"
+    }
+   ],
+   "recog_top": {
+    "tier": "Michelin Bib Gourmand",
+    "tier_rank": 3,
+    "year": 2025,
+    "era": "current",
+    "source": "michelin"
+   },
+   "recog_rank": 3,
+   "recog_eras": [
+    "current"
+   ],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.6,
+    "reviews": 675,
+    "score": 4.58,
+    "place_id": "ChIJNaUIchtZwokRHI8Pk3mEz1Y",
+    "matched_name": "8282",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/8282/",
+    "menu": null,
+    "reservation": null,
+    "website": "https://www.eightwoeightwo.com"
+   },
+   "gap_usd": 7,
+   "gap_usd_high": null,
+   "gap_pct": 10,
+   "gap_pct_high": null,
+   "gap_basis": "estimate",
+   "comparable_usd": 67,
+   "comparable_usd_high": null,
+   "rw_price": 60,
+   "price_source": "listing",
+   "estimate_tier": "$60",
+   "estimate_confidence": "high",
+   "rubric": 63.5,
+   "rubric_parts": {
+    "award": 72.0,
+    "rating": 70.7,
+    "lex": 55.0,
+    "window": 33.3
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "ai-fiori",
+   "name": "Ai Fiori",
+   "borough": "Manhattan",
+   "neighborhood": "Midtown West",
+   "address": "The Langham, New York, Fifth Avenue, 400 Fifth Ave., Manhattan, NY, 10018",
+   "lat": 40.7501833,
+   "lng": -73.983759,
+   "subway": {
+    "R": 6,
+    "W": 6,
+    "6": 8,
+    "N": 6,
+    "Q": 6,
+    "B": 6,
+    "D": 6,
+    "F": 6,
+    "M": 6,
+    "1": 10,
+    "2": 10,
+    "3": 10,
+    "7": 7,
+    "4": 10,
+    "5": 10,
+    "S": 8
+   },
+   "subway_nearest": {
+    "name": "34 St-Herald Sq",
+    "min": 6,
+    "routes": [
+     "N",
+     "Q",
+     "R",
+     "W"
+    ]
+   },
+   "outdoor": null,
+   "cuisines": [
+    "Italian",
+    "French",
+    "Modern European"
+   ],
+   "price_tiers": [
+    "$60"
+   ],
+   "meal_periods": [
+    "dinner"
+   ],
+   "meal_types_raw": [
+    "$60 Dinner Price",
+    "$60 Sunday Dinner Price"
+   ],
+   "end_date": "2026-08-16",
+   "end_date_source": "api",
+   "end_date_api": "2026-08-16",
+   "days": "Mon-Fri",
+   "sunday": false,
+   "sunday_source": "verified",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "Verified note",
+   "verdict_note": null,
+   "notes": "Own materials print Mon-Fri; the listing API claims a $60 Sunday Dinner Price. Restaurant wins - no Sunday.",
+   "flags": [
+    "sunday_api_contradicted"
+   ],
+   "menu_state": "none",
+   "recognition": [
+    {
+     "source": "james_beard",
+     "source_label": "James Beard",
+     "level": "semifinalist",
+     "level_raw": "semifinalist",
+     "year": 2012,
+     "url": "https://www.jamesbeard.org/awards/search-past-awards?keyword=Bob%20Truitt&year=2012",
+     "matched_name": "Ai Fiori",
+     "name_match_only": true,
+     "confidence": 0.9,
+     "awards": [
+      "Outstanding Pastry Chef — Bob Truitt"
+     ],
+     "tier_rank": 5,
+     "tier": "James Beard semifinalist",
+     "era": "past"
+    },
+    {
+     "source": "michelin",
+     "source_label": "Michelin",
+     "level": "The Plate",
+     "level_raw": "recommended",
+     "year": 2025,
+     "url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/ai-fiori",
+     "matched_name": "Ai Fiori",
+     "name_match_only": false,
+     "confidence": 1.0,
+     "awards": [],
+     "tier_rank": 6,
+     "tier": "Michelin Plate",
+     "era": "current"
+    }
+   ],
+   "recog_top": {
+    "tier": "James Beard semifinalist",
+    "tier_rank": 5,
+    "year": 2012,
+    "era": "past",
+    "source": "james_beard"
+   },
+   "recog_rank": 5,
+   "recog_eras": [
+    "current",
+    "past"
+   ],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.4,
+    "reviews": 1830,
+    "score": 4.407,
+    "place_id": "ChIJMYIE-KlZwokRZuFHn8jkNuo",
+    "matched_name": "Ai Fiori",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/ai-fiori/",
+    "menu": null,
+    "reservation": null,
+    "website": "https://aifiorinyc.com"
+   },
+   "gap_usd": null,
+   "gap_usd_high": null,
+   "gap_pct": null,
+   "gap_pct_high": null,
+   "gap_basis": null,
+   "comparable_usd": null,
+   "comparable_usd_high": null,
+   "rw_price": 60,
+   "price_source": "listing",
+   "rubric": 36.5,
+   "rubric_parts": {
+    "award": 37.5,
+    "rating": 25.4,
+    "lex": 70.0,
+    "window": 0.0
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "aqua-boil",
+   "name": "Aqua Boil",
+   "borough": "Manhattan",
+   "neighborhood": "Hells Kitchen",
+   "address": "750 Ninth Ave., Manhattan, NY, 10019",
+   "lat": 40.7637215,
+   "lng": -73.988403,
+   "subway": {
+    "A": 12,
+    "C": 4,
+    "E": 4,
+    "N": 9,
+    "R": 9,
+    "W": 9,
+    "1": 7,
+    "Q": 11,
+    "B": 9,
+    "D": 9
+   },
+   "subway_nearest": {
+    "name": "50 St",
+    "min": 4,
+    "routes": [
+     "C",
+     "E"
+    ]
+   },
+   "outdoor": null,
+   "cuisines": [
+    "Seafood"
+   ],
+   "price_tiers": [
+    "$60"
+   ],
+   "meal_periods": [
+    "brunch",
+    "dinner",
+    "lunch"
+   ],
+   "meal_types_raw": [
+    "$60 Lunch Price",
+    "$60 Dinner Price",
+    "$60 Sunday Lunch/Brunch Price",
+    "$60 Sunday Dinner Price"
+   ],
+   "end_date": "2026-09-06",
+   "end_date_source": "api",
+   "end_date_api": "2026-09-06",
+   "days": null,
+   "sunday": true,
+   "sunday_source": "api",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "No comparable",
+   "verdict_note": null,
+   "notes": null,
+   "flags": [],
+   "menu_state": "image_only",
+   "recognition": [],
+   "recog_top": null,
+   "recog_rank": null,
+   "recog_eras": [],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.7,
+    "reviews": 3524,
+    "score": 4.691,
+    "place_id": "ChIJyR90JKxZwokRZc9iRIEIs3w",
+    "matched_name": "Aqua Boil",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/aqua-boil/",
+    "menu": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/41672-AquaBoil-menu.pdf",
+    "reservation": "https://www.opentable.com/restref/client/?rid=1401595",
+    "website": "https://www.aquaboilnyc.com"
+   },
+   "gap_usd": null,
+   "gap_usd_high": null,
+   "gap_pct": null,
+   "gap_pct_high": null,
+   "gap_basis": null,
+   "comparable_usd": null,
+   "comparable_usd_high": null,
+   "rw_price": 60,
+   "price_source": "listing",
+   "rubric": 44.1,
+   "rubric_parts": {
+    "award": 0.0,
+    "rating": 87.9,
+    "lex": 50.0,
+    "window": 33.3
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "53",
+   "name": "53",
+   "borough": "Manhattan",
+   "neighborhood": "Midtown West",
+   "address": "53 W. 53rd St., Manhattan, NY, 10019",
+   "lat": 40.7641732,
+   "lng": -73.9847405,
+   "subway": {
+    "B": 5,
+    "D": 5,
+    "F": 11,
+    "M": 10,
+    "N": 6,
+    "R": 6,
+    "W": 6,
+    "C": 4,
+    "E": 4,
+    "1": 5,
+    "Q": 6,
+    "A": 9
+   },
+   "subway_nearest": {
+    "name": "50 St",
+    "min": 4,
+    "routes": [
+     "C",
+     "E"
+    ]
+   },
+   "outdoor": null,
+   "cuisines": [
+    "Pan-Asian"
+   ],
+   "price_tiers": [
+    "$45"
+   ],
+   "meal_periods": [
+    "brunch",
+    "lunch"
+   ],
+   "meal_types_raw": [
+    "$45 Lunch Price",
+    "$45 Sunday Lunch/Brunch Price"
+   ],
+   "end_date": "2026-08-16",
+   "end_date_source": "printed",
+   "end_date_api": "2026-08-16",
+   "days": "Sunday dim sum brunch; also Mon-Fri lunch",
+   "sunday": true,
+   "sunday_source": "verified",
+   "sunday_api": true,
+   "sunday_dinner": false,
+   "courses": null,
+   "rank": 2,
+   "grade": "A",
+   "verdict": "Ranked pick",
+   "verdict_note": "Best single Sunday booking found. $45 RW dim sum brunch vs their standing $78 brunch prix fixe. Altamarea room.",
+   "notes": "Their homepage currently advertises the $78 Sunday dim sum - confirm the $45 RW brunch is what's served on RW Sundays when booking. Avoid the black-cod +$12 route: it lands at ~their $59 lunch set.",
+   "flags": [
+    "book_by_aug16",
+    "confirm_at_booking"
+   ],
+   "menu_state": "none",
+   "recognition": [
+    {
+     "source": "michelin",
+     "source_label": "Michelin",
+     "level": "The Plate",
+     "level_raw": "recommended",
+     "year": 2025,
+     "url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/53",
+     "matched_name": "53",
+     "name_match_only": true,
+     "confidence": 0.9,
+     "awards": [],
+     "tier_rank": 6,
+     "tier": "Michelin Plate",
+     "era": "current"
+    }
+   ],
+   "recog_top": {
+    "tier": "Michelin Plate",
+    "tier_rank": 6,
+    "year": 2025,
+    "era": "current",
+    "source": "michelin"
+   },
+   "recog_rank": 6,
+   "recog_eras": [
+    "current"
+   ],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.3,
+    "reviews": 723,
+    "score": 4.333,
+    "place_id": "ChIJQ2rWiydZwokRKb1IcXrXZ-E",
+    "matched_name": "53",
+    "basis": "place_id",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/53/",
+    "menu": null,
+    "reservation": "https://www.sevenrooms.com/explore/53/reservations/create/search/",
+    "website": "https://53-nyc.com"
+   },
+   "gap_usd": 33,
+   "gap_usd_high": null,
+   "gap_pct": 42,
+   "gap_pct_high": null,
+   "gap_basis": "verified",
+   "comparable_usd": 78,
+   "comparable_usd_high": null,
+   "rw_price": 45,
+   "price_source": "verified",
+   "rubric": 29.8,
+   "rubric_parts": {
+    "award": 40.0,
+    "rating": 16.2,
+    "lex": 50.0,
+    "window": 0.0
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "1803-nyc",
+   "name": "1803 NYC",
+   "borough": "Manhattan",
+   "neighborhood": "Tribeca",
+   "address": "82 Reade St., Manhattan, NY, 10007",
+   "lat": 40.7148664,
+   "lng": -74.0065159,
+   "subway": {
+    "4": 5,
+    "5": 5,
+    "6": 5,
+    "R": 3,
+    "W": 3,
+    "N": 10,
+    "Q": 10,
+    "J": 5,
+    "Z": 5,
+    "A": 3,
+    "C": 3,
+    "E": 6,
+    "1": 4,
+    "2": 4,
+    "3": 4
+   },
+   "subway_nearest": {
+    "name": "Chambers St",
+    "min": 3,
+    "routes": [
+     "A",
+     "C"
+    ]
+   },
+   "outdoor": {
+    "sidewalk": true,
+    "roadway": false,
+    "licensed": true,
+    "described": true,
+    "licence_name": "1803 NYC / BON COURAGE",
+    "dist_m": 61
+   },
+   "cuisines": [
+    "Cajun/Creole"
+   ],
+   "price_tiers": [
+    "$30",
+    "$60"
+   ],
+   "meal_periods": [
+    "dinner",
+    "lunch"
+   ],
+   "meal_types_raw": [
+    "$30 Lunch Price",
+    "$60 Dinner Price",
+    "$60 Sunday Dinner Price"
+   ],
+   "end_date": "2026-08-16",
+   "end_date_source": "api",
+   "end_date_api": "2026-08-16",
+   "days": null,
+   "sunday": true,
+   "sunday_source": "api",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "Estimate only",
+   "verdict_note": null,
+   "notes": null,
+   "flags": [],
+   "menu_state": "pdf",
+   "recognition": [],
+   "recog_top": null,
+   "recog_rank": null,
+   "recog_eras": [],
+   "tags": [],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.5,
+    "reviews": 2109,
+    "score": 4.499,
+    "place_id": "ChIJ0yKXaB9awokR6WFqdEE9aBY",
+    "matched_name": "1803 NYC",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/1803-nyc/",
+    "menu": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50501-1803NYC-menu.pdf",
+    "reservation": null,
+    "website": "https://1803nyc.com"
+   },
+   "gap_usd": 30,
+   "gap_usd_high": null,
+   "gap_pct": 50,
+   "gap_pct_high": null,
+   "gap_basis": "estimate",
+   "comparable_usd": 60,
+   "comparable_usd_high": null,
+   "rw_price": 30,
+   "price_source": "listing",
+   "estimate_tier": "$30",
+   "estimate_confidence": "high",
+   "rubric": 35.6,
+   "rubric_parts": {
+    "award": 0.0,
+    "rating": 50.2,
+    "lex": 85.0,
+    "window": 0.0
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  },
+  {
+   "slug": "five-napkin-burger-hells-kitchen",
+   "name": "5 Napkin Burger - Hell's Kitchen",
+   "borough": "Manhattan",
+   "neighborhood": "Hells Kitchen",
+   "address": "630 Ninth Ave., Manhattan, NY, 10036",
+   "lat": 40.759987,
+   "lng": -73.9912338,
+   "subway": {
+    "A": 5,
+    "C": 5,
+    "E": 5,
+    "N": 10,
+    "R": 10,
+    "W": 10,
+    "1": 10,
+    "Q": 11,
+    "2": 10,
+    "3": 10,
+    "7": 9,
+    "S": 10
+   },
+   "subway_nearest": {
+    "name": "42 St-Port Authority Bus Terminal",
+    "min": 5,
+    "routes": [
+     "A",
+     "C",
+     "E"
+    ]
+   },
+   "outdoor": {
+    "sidewalk": true,
+    "roadway": false,
+    "licensed": true,
+    "described": false,
+    "licence_name": "FIVE NAPKIN BURGER",
+    "dist_m": 19
+   },
+   "cuisines": [
+    "Burgers",
+    "American (Traditional)"
+   ],
+   "price_tiers": [
+    "$30"
+   ],
+   "meal_periods": [
+    "brunch",
+    "dinner",
+    "lunch"
+   ],
+   "meal_types_raw": [
+    "$30 Lunch Price",
+    "$30 Dinner Price",
+    "$30 Sunday Lunch/Brunch Price",
+    "$30 Sunday Dinner Price"
+   ],
+   "end_date": "2026-09-06",
+   "end_date_source": "api",
+   "end_date_api": "2026-09-06",
+   "days": null,
+   "sunday": true,
+   "sunday_source": "api",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": null,
+   "verdict": "Estimate only",
+   "verdict_note": null,
+   "notes": null,
+   "flags": [],
+   "menu_state": "pdf",
+   "recognition": [],
+   "recog_top": null,
+   "recog_rank": null,
+   "recog_eras": [],
+   "tags": [],
+   "offsite_tags": [],
+   "google": null,
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/five-napkin-burger-hells-kitchen/",
+    "menu": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/41741-5NapkinBurger-Hell%27sKitchen-menu.pdf",
+    "reservation": "https://www.opentable.com/restref/client/?rid=22765",
+    "website": "https://www.5napkinburger.com/location/hell-s-kitchen-5napkinburger"
+   },
+   "gap_usd": 29,
+   "gap_usd_high": null,
+   "gap_pct": 49,
+   "gap_pct_high": null,
+   "gap_basis": "estimate",
+   "comparable_usd": 59,
+   "comparable_usd_high": null,
+   "rw_price": 30,
+   "price_source": "listing",
+   "estimate_tier": "$30",
+   "estimate_confidence": "high",
+   "rubric": 31.2,
+   "rubric_parts": {
+    "award": 0.0,
+    "rating": null,
+    "lex": 50.0,
+    "window": 33.3
+   },
+   "rubric_completeness": 66.7,
+   "rubric_imputed": [
+    "rating"
+   ]
+  },
+  {
+   "slug": "socarrat-paella-bar-chelsea",
+   "name": "Socarrat Paella Bar - Chelsea",
+   "borough": "Manhattan",
+   "neighborhood": "Chelsea",
+   "address": "259 W. 19th St., Manhattan, NY, 10011",
+   "lat": 40.7427594,
+   "lng": -73.999481,
+   "subway": {
+    "A": 5,
+    "C": 5,
+    "E": 5,
+    "F": 9,
+    "M": 9,
+    "1": 4,
+    "2": 9,
+    "3": 9,
+    "L": 7
+   },
+   "subway_nearest": {
+    "name": "18 St",
+    "min": 4,
+    "routes": [
+     "1"
+    ]
+   },
+   "outdoor": null,
+   "cuisines": [
+    "Spanish"
+   ],
+   "price_tiers": [
+    "$45"
+   ],
+   "meal_periods": [
+    "dinner"
+   ],
+   "meal_types_raw": [
+    "$45 Dinner Price",
+    "$45 Sunday Dinner Price"
+   ],
+   "end_date": "2026-08-16",
+   "end_date_source": "printed",
+   "end_date_api": "2026-08-16",
+   "days": "Sunday-Friday; not Saturdays",
+   "sunday": true,
+   "sunday_source": "verified",
+   "sunday_api": true,
+   "sunday_dinner": true,
+   "courses": null,
+   "rank": null,
+   "grade": "A",
+   "verdict": "Verified note",
+   "verdict_note": null,
+   "notes": "Verified 2026-08-03 via a real browser (the plain fetcher got 403). Own site: \"FROM JULY 20TH TO AUGUST 16TH ... $45 per person Available Sunday-Friday at all Socarrat locations *Not available on Saturdays*\". The page states it covers all Socarrat locations. Max 6 diners per the same page.",
+   "flags": [
+    "book_by_aug16"
+   ],
+   "menu_state": "pdf",
+   "recognition": [],
+   "recog_top": null,
+   "recog_rank": null,
+   "recog_eras": [],
+   "tags": [
+    {
+     "tag": "braised",
+     "confidence": "high",
+     "keyword": "braised",
+     "snippet": "short ribs braised in red wine, mussels,…",
+     "source": "item"
+    },
+    {
+     "tag": "paella",
+     "confidence": "high",
+     "keyword": "PAELLA",
+     "snippet": "PAELLA BAR SINCE 2008",
+     "source": "item"
+    }
+   ],
+   "offsite_tags": [],
+   "google": {
+    "rating": 4.5,
+    "reviews": 1744,
+    "score": 4.499,
+    "place_id": "ChIJ9ajN9btZwokRIxQws60QJq8",
+    "matched_name": "Socarrat Paella Bar - Chelsea",
+    "basis": "textsearch",
+    "status": "OPERATIONAL",
+    "closed": false
+   },
+   "links": {
+    "listing": "https://www.nyctourism.com/restaurant-week/socarrat-paella-bar-chelsea/",
+    "menu": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38284-SocarratPaellaBar-Chelsea-menu.pdf",
+    "reservation": "https://www.opentable.com/restref/client/?rid=60874",
+    "website": "https://socarratnyc.com/chelsea"
+   },
+   "gap_usd": null,
+   "gap_usd_high": null,
+   "gap_pct": null,
+   "gap_pct_high": null,
+   "gap_basis": null,
+   "comparable_usd": null,
+   "comparable_usd_high": null,
+   "rw_price": 45,
+   "price_source": "verified",
+   "rubric": 27.9,
+   "rubric_parts": {
+    "award": 0.0,
+    "rating": 50.2,
+    "lex": 50.0,
+    "window": 0.0
+   },
+   "rubric_completeness": 100.0,
+   "rubric_imputed": []
+  }
+ ]
+}

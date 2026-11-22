@@ -1,0 +1,23 @@
+[
+ {
+  "venue_slug": "100-feast",
+  "name": "100 Feast",
+  "place_id": "ChIJf83T8ghbwokRZ8mODC62yPI",
+  "top_honor": null,
+  "status": "open"
+ },
+ {
+  "venue_slug": "1803-nyc",
+  "name": "1803 NYC",
+  "place_id": "ChIJ0yKXaB9awokR6WFqdEE9aBY",
+  "top_honor": null,
+  "status": "open"
+ },
+ {
+  "venue_slug": "five-napkin-burger-hells-kitchen",
+  "name": "5 Napkin Burger - Hell's Kitchen",
+  "place_id": null,
+  "top_honor": null,
+  "status": "open"
+ }
+]

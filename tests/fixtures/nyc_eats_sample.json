@@ -1,0 +1,236 @@
+{
+ "meta": {
+  "generated_at": "2026-11-10T08:08:32Z"
+ },
+ "restaurants": [
+  {
+   "address": "330 Myrtle Ave, Brooklyn, NY 11205, USA",
+   "also_listed_as": null,
+   "awards": [
+    "Michelin recommended 2025"
+   ],
+   "borough": "Brooklyn",
+   "categories": [],
+   "category_why": {},
+   "checked": "2026-11-09",
+   "cuisine": "Thai",
+   "delivery": true,
+   "fresh": null,
+   "grade": {
+    "date": "2026-03-25",
+    "letter": "B"
+   },
+   "hours": [
+    [
+     0,
+     11,
+     30,
+     0,
+     16,
+     0
+    ],
+    [
+     0,
+     17,
+     0,
+     0,
+     22,
+     0
+    ],
+    [
+     1,
+     11,
+     30,
+     1,
+     16,
+     0
+    ],
+    [
+     1,
+     17,
+     0,
+     1,
+     22,
+     0
+    ],
+    [
+     2,
+     11,
+     30,
+     2,
+     16,
+     0
+    ],
+    [
+     2,
+     17,
+     0,
+     2,
+     22,
+     0
+    ],
+    [
+     3,
+     11,
+     30,
+     3,
+     16,
+     0
+    ],
+    [
+     3,
+     17,
+     0,
+     3,
+     22,
+     0
+    ],
+    [
+     4,
+     11,
+     30,
+     4,
+     16,
+     0
+    ],
+    [
+     4,
+     17,
+     0,
+     4,
+     22,
+     0
+    ],
+    [
+     5,
+     11,
+     30,
+     5,
+     16,
+     0
+    ],
+    [
+     5,
+     17,
+     0,
+     5,
+     22,
+     0
+    ],
+    [
+     6,
+     11,
+     30,
+     6,
+     16,
+     0
+    ],
+    [
+     6,
+     17,
+     0,
+     6,
+     22,
+     0
+    ]
+   ],
+   "hours_text": [
+    "Monday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Tuesday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Wednesday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Thursday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Friday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Saturday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM",
+    "Sunday: 11:30 AM – 4:00 PM, 5:00 – 10:00 PM"
+   ],
+   "id": "ChIJGfdZtJdbwokREUPcjASYSr4",
+   "lat": 40.693093399999995,
+   "lng": -73.9733109,
+   "maps_url": "https://maps.google.com/?cid=13711939160793432849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+   "menu": {
+    "checked": "2026-11-10",
+    "prices": [],
+    "says": {}
+   },
+   "name": "Glin Thai Bistro",
+   "neighborhood": "Fort Greene",
+   "neighborhood_rw": null,
+   "nta": "BK68",
+   "phone": "(347) 987-4100",
+   "price": 2,
+   "rating": 4.9,
+   "reservable": true,
+   "restaurant_week": false,
+   "reviews": 5676,
+   "score": 4.8898,
+   "source": "google",
+   "summary": null,
+   "takeout": true,
+   "website": "https://www.glinthaibistro.com/",
+   "zip": "11205"
+  },
+  {
+   "address": "220-11 Linden Blvd, Cambria Heights, NY 11411, USA",
+   "also_listed_as": null,
+   "awards": [],
+   "borough": "Queens",
+   "categories": [
+    "Omakase & chef's counter"
+   ],
+   "category_why": {
+    "Omakase & chef's counter": "name or summary mentions 'omakase'"
+   },
+   "checked": "2026-11-10",
+   "cuisine": "Chinese",
+   "delivery": true,
+   "fresh": null,
+   "grade": null,
+   "hours": [
+    [
+     2,
+     0,
+     0,
+     1,
+     21,
+     0
+    ]
+   ],
+   "hours_text": [
+    "Monday: 12:00 AM – 9:00 PM",
+    "Tuesday: Open 24 hours",
+    "Wednesday: Open 24 hours",
+    "Thursday: Open 24 hours",
+    "Friday: Open 24 hours",
+    "Saturday: Open 24 hours",
+    "Sunday: Open 24 hours"
+   ],
+   "id": "ChIJV7PIN49jwokRJvNcc5Sfnj8",
+   "lat": 40.695188699999996,
+   "lng": -73.73956869999999,
+   "maps_url": "https://maps.google.com/?cid=4584276930649191206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+   "menu": {
+    "checked": "2026-11-10",
+    "prices": [],
+    "says": {
+     "Omakase & chef's counter": "Hibachi Omakase | #1 Choice Hibachi At Home Experience"
+    }
+   },
+   "name": "Hibachi Omakase",
+   "neighborhood": "Cambria Heights",
+   "neighborhood_rw": null,
+   "nta": "QN33",
+   "phone": "(929) 922-6666",
+   "price": null,
+   "rating": 5,
+   "reservable": null,
+   "restaurant_week": false,
+   "reviews": 4068,
+   "score": 4.9823,
+   "source": "google",
+   "summary": null,
+   "takeout": true,
+   "website": "https://www.hibachiomakase.com/",
+   "zip": "11411"
+  }
+ ]
+}

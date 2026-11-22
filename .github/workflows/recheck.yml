@@ -1,0 +1,52 @@
+name: weekly recheck
+
+# Every Monday: fetch each research Deal's Proof page (the restaurants' own public
+# pages; free), rebuild the site, commit what changed, and keep ONE open issue
+# titled "Recheck List" up to date. No key and no billed call: the Places lookup
+# never runs here.
+on:
+  schedule:
+    - cron: "0 14 * * 1"   # 09:00 New York (10:00 in summer)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: recheck
+  cancel-in-progress: false
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Recheck Proof pages
+        run: python scripts/recheck.py
+      - name: Build the site
+        run: python scripts/build.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/checks.json docs/data.json data/recheck_list.md
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -m "Weekly recheck $(date -u +%F)"
+          git push
+      - name: Update the Recheck List issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # --search matches words, so "Recheck List notes" would match too: pick the exact title.
+          n=$(gh issue list --state open --search 'in:title "Recheck List"' --limit 200 --json number,title \
+                --jq '[.[] | select(.title == "Recheck List")][0].number // empty')
+          if [ -n "$n" ]; then
+            gh issue edit "$n" --body-file data/recheck_list.md
+          else
+            gh issue create --title "Recheck List" --body-file data/recheck_list.md
+          fi

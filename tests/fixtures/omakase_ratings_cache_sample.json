@@ -1,0 +1,32 @@
+{
+ "Hatsuhana": {
+  "rating": 4.6,
+  "review_count": 1496,
+  "google_name": "Hatsuhana",
+  "address": "17 E 48th St, New York, NY 10017, USA",
+  "lat": 40.75701600000001,
+  "lng": -73.9769152,
+  "place_id": "ChIJw47zKvxYwokRgD1Zt5Licyo",
+  "business_status": "OPERATIONAL"
+ },
+ "Akimori": {
+  "rating": 4.7,
+  "review_count": 98,
+  "google_name": "AKIMORI",
+  "address": "858 Lexington Ave, New York, NY 10065, USA",
+  "lat": 40.7658058,
+  "lng": -73.9658192,
+  "place_id": "ChIJNSEUTU9ZwokRyxzObSHsO3Y",
+  "business_status": "OPERATIONAL"
+ },
+ "Inase": {
+  "rating": 4.7,
+  "review_count": 271,
+  "google_name": "Omakase Shihou - Upper West Side (Lunch Available)",
+  "address": "285 Columbus Ave 2nd Floor, New York, NY 10023, USA",
+  "lat": 40.7782965,
+  "lng": -73.9779183,
+  "place_id": "ChIJyehmYMRZwokRSpXtKzIT4Do",
+  "business_status": "OPERATIONAL"
+ }
+}

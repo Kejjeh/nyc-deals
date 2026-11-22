@@ -1,0 +1,4 @@
+{
+ "_doc": "Research Set Menus, the source of truth for non-Restaurant-Week Deals. Each row is added only after the owner has checked its Proof (the restaurant's own page); see research/Deals_Research_Prompt.md and CLAUDE.md for the fields. Restaurant Week menus are not here: they come from nyc-restaurants' export.",
+ "set_menus": []
+}

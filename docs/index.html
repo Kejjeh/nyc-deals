@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Fixed-price restaurant menus in New York City that are cheap enough to count as Deals, each checked against the restaurant's own menu.">
+<title>NYC Deals</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b4532a'/%3E%3Ctext x='16' y='23' font-size='19' font-family='Georgia' text-anchor='middle' fill='white'%3E$%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f6f4ef; --card: #fffdf9; --line: #e4dfd4; --ink: #1d1b17; --ink-2: #57524a; --ink-3: #7b756b;
+  --accent: #b4532a; --badge: #f1ece2; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141311; --card: #1d1c19; --line: #302e2a; --ink: #f1eee8; --ink-2: #c5c0b6; --ink-3: #9a958b;
+    --accent: #e0855b; --badge: #2a2824; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141311; --card: #1d1c19; --line: #302e2a; --ink: #f1eee8; --ink-2: #c5c0b6; --ink-3: #9a958b;
+  --accent: #e0855b; --badge: #2a2824; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 28px 16px 56px; }
+h1 { font: 600 28px/1.15 Georgia, "Times New Roman", serif; margin: 0; }
+h1 span { color: var(--accent); }
+.lede { color: var(--ink-2); margin: 8px 0 0; max-width: 62ch; font-size: 14px; }
+.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 22px 0 10px; }
+.filters label { font-size: 12px; color: var(--ink-2); display: grid; gap: 4px; }
+select { font: inherit; font-size: 14px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+.count { font-size: 13px; color: var(--ink-3); margin: 0 0 10px; }
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.deal { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.deal-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.deal h3 { margin: 0; font-size: 17px; }
+.price { font: 600 20px Georgia, serif; color: var(--ink); white-space: nowrap; }
+.meta { margin: 2px 0 0; color: var(--ink-2); font-size: 13px; }
+.line { margin: 6px 0 0; font-size: 14px; font-variant-numeric: tabular-nums; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.badge { font-size: 12px; background: var(--badge); color: var(--ink); border-radius: 999px; padding: 2px 9px; text-decoration: none; border: 1px solid var(--line); }
+a.badge:hover { border-color: var(--ink-3); }
+.badge.rw { border-color: var(--accent); color: var(--accent); background: transparent; }
+.saving, .note { margin: 6px 0 0; font-size: 13px; color: var(--ink-2); }
+.proof { margin: 8px 0 0; font-size: 12px; color: var(--ink-3); }
+.proof a { color: var(--ink-2); }
+.empty { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 22px; color: var(--ink-2); }
+footer { margin-top: 28px; font-size: 12px; color: var(--ink-3); }
+footer a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>NYC <span>Deals</span></h1>
+    <p class="lede" id="rule">Fixed-price menus in New York City that are cheap enough to count as Deals.</p>
+  </header>
+
+  <section class="filters" aria-label="Filters">
+    <label>Meal
+      <select id="meal"><option value="any">Any meal</option><option value="lunch">Lunch</option><option value="dinner">Dinner</option><option value="brunch">Brunch</option></select>
+    </label>
+    <label>Day
+      <select id="day"><option value="any">Any day</option><option value="today">Today</option>
+        <option value="mon">Monday</option><option value="tue">Tuesday</option><option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option><option value="fri">Friday</option><option value="sat">Saturday</option><option value="sun">Sunday</option></select>
+    </label>
+    <label>Borough
+      <select id="borough"><option value="any">All boroughs</option></select>
+    </label>
+    <label>Price
+      <select id="max"><option value="any">Any Deal price</option><option value="30">Up to $30</option><option value="45">Up to $45</option><option value="60">Up to $60</option></select>
+    </label>
+  </section>
+
+  <p class="count" id="count" aria-live="polite"></p>
+  <ul id="list"></ul>
+  <p class="empty" id="none" hidden>No Deal matches these filters.</p>
+  <p class="empty" id="empty" hidden>No confirmed Deals right now. New ones are added after each is checked against the restaurant's own menu, and Restaurant Week Deals appear while the program runs.</p>
+
+  <footer>
+    <p>Sorted by price per course; Restaurant Week menus, whose course counts aren't published, come after by price. Badges are rankings from <a href="https://kejjeh.github.io/omakase/">The Restaurant Report</a>, <a href="https://kejjeh.github.io/nyc-eats/">NYC Eats</a> and <a href="https://kejjeh.github.io/nyc-restaurants/">the NYC award roster</a>, shown side by side and never combined. <span id="updated"></span></p>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
